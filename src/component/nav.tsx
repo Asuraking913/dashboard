@@ -6,7 +6,7 @@ import { CiInboxIn } from "react-icons/ci";
 
 function Nav() {
   return (
-    <div className="p-[15px] border-b-gray00 border-[1.5px] flex items-center justify-between fixed top-0 w-full">
+    <div className="p-[15px] bg-[--white] border-b-gray00 border-[1.5px] flex items-center justify-between fixed top-0 w-full">
 
         <div className="flex items-center justify-center gap-[60px]">
 
