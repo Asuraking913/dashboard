@@ -2,6 +2,11 @@ import React, { useState } from 'react'
 import Portfolio from './portfolio'
 import { HiDotsHorizontal } from 'react-icons/hi'
 import Retension from './retention'
+import bnb from "./../assets/bnb.png"
+import btc from "./../assets/btc.png"
+import cardana from "./../assets/cardana.png"
+import sol from "./../assets/sol.png"
+import eth from "./../assets/eth.png"
 
 function Hero2() {
 
@@ -11,7 +16,8 @@ function Hero2() {
         buyPrice: string,
         profitLoss: string,
         value: string,
-        symbol: string
+        symbol: string, 
+        icon: any
     }
 
     type retensionProps = {
@@ -28,7 +34,8 @@ function Hero2() {
             balance: "8,234", 
             buyPrice: "14,2023", 
             profitLoss: "8.43", 
-            value: "120,477,234"
+            value: "120,477,234",
+            icon: btc
         }, 
         {
             asset: "Ethereum", 
@@ -36,7 +43,8 @@ function Hero2() {
             balance: "8,234", 
             buyPrice: "14,2023", 
             profitLoss: "8.43",
-            value: "120,477,234"
+            value: "120,477,234",
+            icon: eth
         }, 
         {
             asset: "Solana", 
@@ -44,7 +52,8 @@ function Hero2() {
             balance: "8,234", 
             buyPrice: "14,2023", 
             profitLoss: "8.43",
-            value: "120,477,234"
+            value: "120,477,234",
+            icon: sol
         }, 
         {
             asset: "Cardino", 
@@ -52,7 +61,8 @@ function Hero2() {
             balance: "8,234", 
             buyPrice: "14,2023", 
             profitLoss: "8.43",
-            value: "120,477,234"
+            value: "120,477,234",
+            icon: cardana
         }, 
         {
             asset: "Binance", 
@@ -60,7 +70,8 @@ function Hero2() {
             balance: "8,234", 
             buyPrice: "14,2023", 
             profitLoss: "8.43",
-            value: "120,477,234"
+            value: "120,477,234",
+            icon: bnb
         }
     ])
 
@@ -73,33 +84,33 @@ function Hero2() {
         }, 
         {
             percent: 100, 
-            month: "january", 
-            symbol: "Jan", 
-            interval: 40
+            month: "Feburary", 
+            symbol: "Feb", 
+            interval: 50
         }, 
         {
             percent: 100, 
-            month: "january", 
-            symbol: "Jan", 
-            interval: 40
+            month: "March", 
+            symbol: "Mar", 
+            interval: 60
         }, 
         {
             percent: 100, 
-            month: "january", 
-            symbol: "Jan", 
-            interval: 40
+            month: "April", 
+            symbol: "Apr", 
+            interval: 60
         }, 
         {
             percent: 100, 
-            month: "january", 
-            symbol: "Jan", 
-            interval: 40
+            month: "May", 
+            symbol: "May", 
+            interval: 60
         }, 
         {
             percent: 100, 
-            month: "january", 
-            symbol: "Jan", 
-            interval: 40
+            month: "June", 
+            symbol: "Jun", 
+            interval: 60
         }
     ]
 
@@ -133,7 +144,7 @@ function Hero2() {
                     </li>
                 </ul>
 
-                <div className='flex flex-col gap-[15px] '>
+                <div className='flex flex-col gap-[10px] '>
                     {chainsList}
                 </div>
 
@@ -141,7 +152,7 @@ function Hero2() {
 
         </section>
 
-        <section className='w-[87%] h-full border-[1.5px] border-b-gray-300 rounded-[20px] p-[10px]'>
+        <section className='w-[87%] h-full border-[1.5px] border-b-gray-300 rounded-[20px] p-[10px] flex flex-col gap-[20px]'>
 
             <div className='flex items-center justify-between text-[0.8rem] pop'>
                 <div>
@@ -155,7 +166,7 @@ function Hero2() {
 
             </div>
 
-            <div>
+            <div className='flex flex-col gap-[5px]'>
                 {retensionList}
             </div>
 

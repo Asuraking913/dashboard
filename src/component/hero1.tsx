@@ -6,6 +6,7 @@ import { GiTrophy } from "react-icons/gi";
 import { RiArrowRightUpBoxFill } from "react-icons/ri";
 import { BiArrowToBottom, BiArrowToTop } from "react-icons/bi";
 import Blockchain from "./blockChain";
+import Graph from "./graph";
 
 
 function Hero1() {
@@ -93,7 +94,7 @@ function Hero1() {
                   <h1 className="urba  text-[1.2rem]">Total Profit</h1>
                   <p>Lorem ipsum dolor sit amet.</p>
                 </div>
-                <div className="flex items-center gap-[20px]">
+                <div className="flex items-center gap-[5px]">
                     <div className="flex flex-col items-start">
                       <p className="text-[2rem] pop font-bold">$75,843.52</p>
                       <p className="p-[4px] border-[--accent] border-[1.5px] rounded-[15px] pop font-semibold px-[10px]">You have a great performance</p>
@@ -108,9 +109,9 @@ function Hero1() {
             </div>
 
             {/* graph */}
-            {/* <div className="w-[300px] bg-black h-[20vh]">
-            
-            </div> */}
+            <div className="w-[300px] 0vh]">
+              <Graph />
+            </div>
             
           </div>
 

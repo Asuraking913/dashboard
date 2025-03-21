@@ -1,4 +1,3 @@
-import React from 'react'
 import { BiArrowToBottom, BiArrowToTop } from "react-icons/bi";
 
 type portfolioProps = {
@@ -8,9 +7,10 @@ type portfolioProps = {
         profitLoss: string,
         value: string, 
         symbol: string,
+        icon: any
 }
 
-function Portfolio({asset, balance, buyPrice, profitLoss, value, symbol} : portfolioProps) {
+function Portfolio({asset, balance, buyPrice, profitLoss, value, symbol, icon} : portfolioProps) {
 
     const green = ['ETH', 'ADA', "BNB"]
 
@@ -18,9 +18,7 @@ function Portfolio({asset, balance, buyPrice, profitLoss, value, symbol} : portf
     <ul className='flex text-[0.9rem] pop gap-[20px] items-center'>
         <li className='w-full flex items-center gap-[5px]'>
         {/* chain landmark */}
-            <div className='w-[40px] h-[40px] bg-black rounded-f'>
-
-            </div>
+            <img src={icon} className='w-[40px] h-[40px] object-cover' alt="" />
             <p>{asset}</p>
             <p className='text-[0.8rem] text-gray-400'>{symbol}</p>
         </li>
