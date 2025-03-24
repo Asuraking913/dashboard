@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import Portfolio from './portfolio'
 import { HiDotsHorizontal } from 'react-icons/hi'
 import Retension from './retention'
@@ -27,7 +26,7 @@ function Hero2() {
         interval: number
     }
 
-    const [chains, setChains] = useState<chainsProps[]>([
+    const chains:  chainsProps[] = [
         {
             asset: "Bitcoin", 
             symbol: "BTC",
@@ -73,7 +72,7 @@ function Hero2() {
             value: "120,477,234",
             icon: bnb
         }
-    ])
+    ]
 
     const retension: retensionProps[] = [
         {
@@ -114,9 +113,9 @@ function Hero2() {
         }
     ]
 
-    const retensionList = retension.map((items, i) => <Retension {...items}/>)
+    const retensionList = retension.map((items, i) => <Retension key={i} {...items}/>)
 
-    const chainsList = chains.map((items, i) => <Portfolio {...items}/>)
+    const chainsList = chains.map((items, i) => <Portfolio key={i} {...items}/>)
 
   return (
     <section className='w-[100%]  flex gap-[5px]'>

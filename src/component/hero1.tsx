@@ -10,8 +10,23 @@ import Graph from "./graph";
 
 
 function Hero1() {
+
+  type subServiceProps = {
+    icons: any,
+    text: string,
+    percent: string,
+    color1: string,
+    color2: string
+  }
+
+  type blockChainProps = {
+    chain: string,
+    price: string, 
+    color: string,
+    icon: any
+  }
   
-  const subService = [
+  const subService: subServiceProps[] = [
      {
       icons: <RiArrowRightUpBoxFill />, 
       text: "Avg.monthly growing", 
@@ -43,7 +58,7 @@ function Hero1() {
   ]
 
 
-  const blockChain = [
+  const blockChain: blockChainProps[] = [
     {
       chain: "BTC",
       price: "12,8456", 

@@ -1,9 +1,8 @@
 type icon = {
     icon: any, 
-    text: string
 }
 
-function Icon({icon, text} : icon) {
+function Icon({icon} : icon) {
     
   return (
     <div className="text-2xl">

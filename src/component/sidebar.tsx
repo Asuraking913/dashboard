@@ -1,4 +1,3 @@
-import React from 'react'
 import Icon from './icons'
 import { HiOutlineChartBarSquare } from "react-icons/hi2";
 import { GiChart } from "react-icons/gi";
@@ -8,7 +7,12 @@ import { MdOutlineSettings } from "react-icons/md";
 
 function Sideicons() {
 
-    const icons = [
+  type iconsProp = {
+    icon: any,
+    text: string
+  }
+
+    const icons: iconsProp[] = [
     {
       icon: <HiOutlineChartBarSquare />,
       text: ""
