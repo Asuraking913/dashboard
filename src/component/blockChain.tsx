@@ -1,5 +1,3 @@
-import React from 'react'
-
 type blockChain = {
     chain: string, 
     price: string, 

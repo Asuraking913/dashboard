@@ -1,11 +1,10 @@
 type retension = {
     percent: number,
-    month: string,
     symbol: string,
     interval: number
 }
 
-function Retension({percent, month, symbol, interval} : retension) {
+function Retension({percent, symbol, interval} : retension) {
   return (
     <ul className="flex gap-[5px] items-center justify-start text-[0.9rem]">
         <li className="p-[10px] text-center text-gray-400 pop w-full">
