@@ -15,12 +15,12 @@ function Portfolio({asset, balance, buyPrice, profitLoss, value, symbol, icon} :
     const green = ['ETH', 'ADA', "BNB"]
 
   return (
-    <ul className='flex text-[0.9rem] pop gap-[20px] items-center'>
+    <ul className='flex sm:text-[0.9rem] text-[0.7rem] pop sm:gap-[20px] gap-[10px] items-center'>
         <li className='w-full flex items-center gap-[5px]'>
         {/* chain landmark */}
-            <img src={icon} className='w-[40px] h-[40px] object-cover' alt="" />
+            <img src={icon} className='sm:w-[40px] sm:h-[40px] w-[30px] h-[30px] object-cover' alt="" />
             <p>{asset}</p>
-            <p className='text-[0.8rem] text-gray-400'>{symbol}</p>
+            <p className='sm:text-[0.8rem] text-gray-400 sm:block hidden'>{symbol}</p>
         </li>
         <li className='w-[70%] bg-b'>
             <p>{balance}</p>

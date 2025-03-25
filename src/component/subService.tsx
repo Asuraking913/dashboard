@@ -21,7 +21,7 @@ function Subservice({icons, text, percent, color1, color2} : service) {
           </p>
         </div>
 
-        <p className="text-[2rem] urba">
+        <p className="sm:text-[2rem] text-[1.7rem] urba">
           {percent}%
         </p>
     </div>

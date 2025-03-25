@@ -8,13 +8,13 @@ function Dashboard() {
 
   
   return (
-    <section className="pt-[80px] flex ">
+    <section className="sm:pt-[80px] pt-[60px] flex ">
 
       <Nav />
 
       <Sideicons />
 
-      <article className="w-full pr-[10px] h-screen overflow-scroll hide-scrollbar flex flex-col gap-[5px] py-[10px]">
+      <article className="w-full sm:pr-[10px] h-screen overflow-scroll hide-scrollbar flex flex-col gap-[5px] py-[10px]">
 
         <Header />
 

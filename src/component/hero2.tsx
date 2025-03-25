@@ -118,14 +118,14 @@ function Hero2() {
     const chainsList = chains.map((items, i) => <Portfolio key={i} {...items}/>)
 
   return (
-    <section className='w-[100%]  flex gap-[5px]'>
+    <section className='w-[100%] flex sm:flex-row flex-col gap-[5px] px-[5px] sm:px-[10px]'>
 
         <section className='w-[100%] border-[1.5px] border-b-gray-300 rounded-[20px] h-full p-[10px] flex flex-col gap-[5px]'>
             <h2 className='urba text-[1.2rem] '>My Portfolio</h2>
 
                 <div className='w-full flex flex-col gap-[5px]'>
 
-                <ul className='flex text-[0.85rem] pop text-gray-400 mt-[10px] gap-[10px]'>
+                <ul className='flex sm:text-[0.85rem] text-[0.7rem] pop text-gray-400 mt-[10px] gap-[5px] sm:gap-[10px]'>
                     <li className='w-full bg-b'>
                         <p>ASSET</p>
                     </li>
@@ -151,7 +151,7 @@ function Hero2() {
 
         </section>
 
-        <section className='w-[87%] h-full border-[1.5px] border-b-gray-300 rounded-[20px] p-[10px] flex flex-col gap-[20px]'>
+        <section className='sm:w-[87%] h-full border-[1.5px] border-b-gray-300 rounded-[20px] p-[10px] flex flex-col gap-[20px]'>
 
             <div className='flex items-center justify-between text-[0.8rem] pop'>
                 <div>

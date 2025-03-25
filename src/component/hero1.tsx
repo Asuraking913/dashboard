@@ -98,11 +98,11 @@ function Hero1() {
   const blockChainList2 = blockChain.slice(2, 5).map((items, i) => <Blockchain key={i} index={i} {...items}/>)
 
   return (
-    <section className="flex gap-[10px]">
+    <section className="flex gap-[10px] sm:flex-row flex-col px-[10px]">
 
-        <section className='h-[50vh] w-[100%] border-[1.5px] border-b-gray-300 rounded-[20px] p-[20px] flex flex-col justify-between'>
+        <section className='sm:h-[50vh] min-h-[50vh] w-[100%] border-[1.5px] border-b-gray-300 sm:rounded-[20px] rounded-[10px] sm:p-[20px] p-[10px] flex flex-col justify-between'>
 
-          <div className="flex justify-between w-full">
+          <div className="flex sm:flex-row sm:gap-0 gap-[10px] flex-col justify-between w-full">
             
             <div className="text-[0.8rem] flex flex-col gap-[20px]">
                 <div>
@@ -130,13 +130,13 @@ function Hero1() {
             
           </div>
 
-          <div className="flex justify-between gap-[10px] mt-[20px]">
+          <div className="sm:flex grid grid-cols-2 sm:flex-nowrap flex-wrap justify-between gap-[10px] mt-[20px]">
             {subSeriviceList}
           </div>
 
         </section>
 
-        <section className=' w-[90%] flex gap-[5px]'>
+        <section className=' sm:w-[90%] flex sm:flex-row flex-col gap-[5px]'>
 
             <div className="w-full border-[1.5px] border-b-gray-300 rounded-[20px] p-[10px] flex flex-col gap-[10px]">
                 
@@ -158,9 +158,9 @@ function Hero1() {
             </div>
 
 
-            <div className="w-[60%] min-h-[40vh] flex flex-col gap-[5px]">
+            <div className="sm:w-[60%] sm:min-h-[40vh] flex sm:flex-col flex-row gap-[5px]">
 
-              <div className="w-full h-full border-[1.5px] border-b-gray-300 rounded-[20px] py-[5px] pop px-[20px] flex flex-col justify-between">
+              <div className="w-full h-full border-[1.5px] border-b-gray-300 rounded-[20px] py-[5px] pop px-[20px] flex flex-col justify-between sm:gap-0 gap-[20px]">
 
                   <h2 className="urba text-[1.1rem]">Highest volume(24h)</h2>
 
@@ -171,7 +171,7 @@ function Hero1() {
 
               </div>
 
-              <div className="w-full h-full border-[1.5px] border-b-gray-300 rounded-[20px] py-[5px] pop px-[20px] flex flex-col justify-between">
+              <div className="w-full h-full border-[1.5px] border-b-gray-300 rounded-[20px] py-[5px] pop px-[20px] flex flex-col justify-between sm:gap-0 gap-[20px]">
 
                   <h2 className="urba text-[1.1rem]">Performance comparison</h2>
 

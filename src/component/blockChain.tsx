@@ -11,7 +11,7 @@ function Blockchain({chain, price, color, index, icon} : blockChain) {
     const green = ['ETH', 'ADA']
 
   return (
-    <div className={`pop text-[0.8rem] w-full ${index === 0 ? "h-full" : "h-[80%]"}  p-[8px] rounded-[15px] ${color} flex flex-col justify-between`}>
+    <div className={`pop text-[0.8rem] sm:gap-0 gap-[30px] w-full ${index === 0 ? "h-full" : "h-[80%]"}  p-[8px] rounded-[15px] ${color} flex flex-col justify-between`}>
         <div className='flex justify-between items-center'>
             <p>{chain}</p>
 
